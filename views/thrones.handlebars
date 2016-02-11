@@ -1,4 +1,32 @@
 <h1>Lineage</h1>
-<h2>{{lannister.house}}</h2>
-<h2>{{lannister.parents.first_parents}}</h2>
-<h>{{lannister.parents.second_parents}}</h2>
+<div>
+  <h2>{{lannister.house}}</h2>
+  <ul>
+    <li><h3>{{lannister.parents.first_parents}}</h3></li>
+    <li>{{lannister.child.first_child}}</li>
+    <li>{{lannister.child.second_child}}</li>
+    <li>{{lannister.child.third_child}}</li>
+    <li><h3>{{lannister.parents.second_parents}}</h3></li>
+    <li>{{lannister.child.fourth_child}}</li>
+  </ul>  
+</div>  
+<div>
+  <h2>{{targaryen.house}}</h2>
+  <ul>
+    <li><h3>{{targaryen.parents}}</h3></li>
+    <li>{{targaryen.child.first_child}}</li>
+    <li>{{targaryen.child.second_child}}</li>
+    <li>{{targaryen.child.third_child}}</li>
+  </ul>
+</div>
+<div>
+  <h2>{{stark.house}}</h2>
+  <ul>
+    <li><h3>{{stark.parents}}</h3></li>
+    <li>{{stark.child.first_child}}</li>
+    <li>{{stark.child.second_child}}</li>
+    <li>{{stark.child.third_child}}</li>
+    <li>{{stark.child.fourth_child}}</li>
+    <li>{{stark.child.fifth_child}}</li>
+  </ul>
+</div>    
