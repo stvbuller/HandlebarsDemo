@@ -5,7 +5,7 @@ var app = express();
 
 var PORT = process.env.PORT || 8090;
 
-app.engine('handlebars', handleBars({defaultLayout: 'main'}));
+app.engine('handlebars', handleBars({defaultLayout: 'gamethrones'}));
 app.set('view engine', 'handlebars');
 
 var lineage = {
@@ -44,8 +44,8 @@ var lineage = {
     },
 };
 
-app.get('', function (req, res) {
-        res.render('home', lineage);
+app.get('/game/of/thrones', function (req, res) {
+        res.render('thrones', lineage);
 });
 
 
